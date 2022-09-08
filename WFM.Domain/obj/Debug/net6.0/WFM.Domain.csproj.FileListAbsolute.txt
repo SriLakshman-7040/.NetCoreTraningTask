@@ -1,0 +1,12 @@
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\bin\Debug\net6.0\WFM.Domain.deps.json
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\bin\Debug\net6.0\WFM.Domain.dll
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\bin\Debug\net6.0\WFM.Domain.pdb
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\obj\Debug\net6.0\WFM.Domain.csproj.AssemblyReference.cache
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\obj\Debug\net6.0\WFM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\obj\Debug\net6.0\WFM.Domain.AssemblyInfoInputs.cache
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\obj\Debug\net6.0\WFM.Domain.AssemblyInfo.cs
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\obj\Debug\net6.0\WFM.Domain.csproj.CoreCompileInputs.cache
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\obj\Debug\net6.0\WFM.Domain.dll
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\obj\Debug\net6.0\refint\WFM.Domain.dll
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\obj\Debug\net6.0\WFM.Domain.pdb
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM.Domain\obj\Debug\net6.0\ref\WFM.Domain.dll
