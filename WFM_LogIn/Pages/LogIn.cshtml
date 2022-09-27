@@ -1,0 +1,103 @@
+﻿@page
+@model WFM_LogIn.Pages.LogInModel
+@{
+    ViewData["Title"] = "LogIn page";
+}
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<style>
+.btn {
+    padding: 0.5rem 6rem;
+    font-size: -0.75rem;
+    border-radius: 3.3rem;
+}
+</style>
+
+<section>
+    <div class="row d-flex justify-content-center col-12">
+        <div class="col-4 border border-primary rounded m-20">
+            <form id="account" method="post" class="py-5">
+                <div class="d-flex justify-content-center">
+                    <i class="icon-map-marker icon-4x text-success"></i>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h1 class="h3 mb-3 font-weight-normal">&nbsp;  Login</h1>
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" class="form-control" placeholder="UserName" required autofocus />
+                    <br />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="secret" class="form-control" placeholder="Password" required />
+                    <br />
+                </div>
+                <div class="form-group">
+                    <center>
+                        <button type="submit" class="btn btn-lg btn-success btn-block" id="loginsubmitBtn">Log in</button>
+                    </center>
+                </div>
+            </form>
+        </div>
+        <div class="row col-12">
+            <p class="col-12">
+                <a id="forgot-password" asp-page="">Forgot your password?</a>
+            </p>
+            <p class="col-12">
+                <a asp-page="" asp-route-returnUrl="">Register as a new user</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="~/js/LogInPage.js"></script>
+
+@*
+    <div class="text-center">
+    <h3 class="display-4">LogIn</h3>
+    <div class="jumbotron">
+
+    </div>
+    </div>*@
+@*
+    <section>
+    <div class="row d-flex justify-content-center col-12">
+    <div class="col-4 border border-primary rounded m-20">
+    <form id="account" method="post" class="py-5">
+    <div class="d-flex justify-content-center">
+    <i class="icon-map-marker icon-4x text-success"></i>
+    </div>
+    <div class="d-flex justify-content-center">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    </div>
+    <div class="form-group ">
+    <input asp-for="Username" class="form-control" placeholder="Email address" required autofocus />
+    <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+    <div class="form-group ">
+    <input asp-for="Input.Password" class="form-control" placeholder="Password" required />
+    <span asp-validation-for="Input.Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <div class="checkbox">
+    <label asp-for="Input.RememberMe">
+    <input asp-for="Input.RememberMe" />
+    @Html.DisplayNameFor(m => m.Input.RememberMe)
+    </label>
+    </div>
+    </div>
+    <div class="form-group">
+    <button type="submit" class="btn btn-lg btn-success btn-block">Sign in</button>
+    </div>
+    </form>
+    </div>
+    <div class="row col-12" >
+    <p class="col-12">
+    <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+    </p>
+    <p class="col-12">
+    <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+    </p>
+    </div>
+    </div>
+    </section>*@

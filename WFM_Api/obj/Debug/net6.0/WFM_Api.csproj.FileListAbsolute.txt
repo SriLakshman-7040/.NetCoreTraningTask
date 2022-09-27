@@ -6,6 +6,7 @@ D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM_Api\bin\Debug\net6.0\
 D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM_Api\bin\Debug\net6.0\WFM_Api.dll
 D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM_Api\bin\Debug\net6.0\WFM_Api.pdb
 D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM_Api\bin\Debug\net6.0\Humanizer.dll
+D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM_Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM_Api\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM_Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\SofturaTrainingStuff\EntityFrameWorkSessionTask\WCF\WFM_Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll

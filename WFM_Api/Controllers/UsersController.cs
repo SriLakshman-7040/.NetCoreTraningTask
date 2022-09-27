@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WFM.Domain_DbFrstApprh.Models;
+using WFM_Api.Abstraction;
 using WFM_Api.API_Context;
+using WFM_Api.Helpers;
 
 namespace WFM_Api.Controllers
 {
@@ -11,24 +13,14 @@ namespace WFM_Api.Controllers
     public class UsersController : ControllerBase
     {
         private readonly WFM_API_Context _context;
-        public UsersController(WFM_API_Context context)
+        private readonly IUserAuth _userAuth; 
+        public UsersController(WFM_API_Context context,IUserAuth userAuth)
         {
             _context = context;
+            _userAuth = userAuth;
         }
-        [HttpGet]
-        public async Task<ActionResult<List<Users_DBF>>> GetAllUsers()
-        {
-            try 
-            {
-                if(_context.Users == null)
-                    return NotFound();
-                return await _context.Users.ToListAsync();
-            }
-            catch(Exception ex)
-            {
-                return BadRequest(ex.Message);  
-            }
-        }
+
+      
         [HttpPost]
         public async Task<ActionResult<Users_DBF>> AddNewUser(Users_DBF userDetail)
         {
@@ -48,6 +40,30 @@ namespace WFM_Api.Controllers
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, new { responseMessage = ex.Message });
+            }
+        }
+        [HttpPost("authenticate")]         
+        public IActionResult Authenticate(AuthenticateRequest userCredential)
+        {
+            var validCredential = _userAuth.Authenticate(userCredential);
+            if (validCredential == null)
+                return StatusCode(StatusCodes.Status401Unauthorized, new { responseMessage = "Username or password is incorrect" });
+            return Ok(validCredential);
+        }
+
+        [Authorize]
+        [HttpGet]
+        public async Task<ActionResult<List<Users_DBF>>> GetAllUsers()
+        {
+            try
+            {
+                if (_context.Users == null)
+                    return NotFound();
+                return await _context.Users.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 
